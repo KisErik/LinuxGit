@@ -1,0 +1,7 @@
+
+The images ('proc1.bmp' and 'proc2.bmp') of this compressed file have the format described in the attached 'bmp.pdf' file.
+
+Write an image processing program in C language using low-level file handling.
+1) Decrease the brightness of 'proc1.bmp'.
+2) Convert the 'proc2.bmp' image to grayscale.
+3) Increase the resolution of 'proc1.bmp' to double.
