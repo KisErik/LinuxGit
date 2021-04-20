@@ -1,17 +1,24 @@
 #!/usr/bin/env python3
 
 
-MELY_MGHK = 'aáoóuú'
-MAGAS_MGHK = 'eéiíöőüű'
+from enum import Enum
+
+
+class Mghk(Enum):
+    MAGAS = 'eéiíöőüű'
+    MELY = 'aáoóuú'
+
+
+
 
 def hangrend(string):
     mely=False
     magas=False
 
     for e in string:
-        if e in MELY_MGHK:
+        if e in Mghk.MELY.value:
             mely=True
-        if e in MAGAS_MGHK:
+        if e in Mghk.MAGAS.value:
             magas=True
 
     if mely and magas:
